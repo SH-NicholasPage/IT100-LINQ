@@ -12,10 +12,9 @@ namespace LINQ
         public float GPA { get; set; }
 
         public Student(string firstName, string lastName, int age, float GPA)
-            : base(firstName, lastName, age) => this.GPA = GPA;
-
-        public bool IsHonorStudent() => GPA >= HONOR_GPA;
-
-        public override String ToString() => base.ToString() + $" and has a GPA of {GPA:F2}";
+            : base(firstName, lastName, age)
+        {
+            this.GPA = GPA;
+        }
     }
 }

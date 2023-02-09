@@ -24,8 +24,7 @@ namespace LINQ
             Console.WriteLine($"Oldest student: {GetOldestStudent()}");
 
             //(2 pts)
-            const float gpaTarget = 3.4f;
-            Console.WriteLine($"Oldest student: {GetStudentsWithGPAOver(gpaTarget)}");
+            Console.WriteLine($"Honors students: {Program.StringifyList(GetStudentsWithHonorsGPA())}");
 
             //(2 pts)
             Class targetClass = classes.Where(x => x.Department == Department.ComputerScience).First();
@@ -54,8 +53,8 @@ namespace LINQ
             return null;
         }
 
-        //Return a list of students with a GPA over the target
-        private static List<Student> GetStudentsWithGPAOver(float gpa)
+        //Return a list of students with a GPA equal to or over the honors GPA threshold
+        private static List<Student> GetStudentsWithHonorsGPA()
         {
             return null;
         }

@@ -14,7 +14,5 @@ namespace LINQ
             LastName = lastName;
             Age = age;
         }
-
-        public override String ToString() => $"{FirstName} {LastName} is {Age} years old";
     }
 }

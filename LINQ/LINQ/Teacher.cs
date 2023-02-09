@@ -13,10 +13,10 @@ namespace LINQ
         public Department Department { get; set; }
 
         public Teacher(String firstName, String lastName, int age, float salary, Department department)
-            : base(firstName, lastName, age) => (Salary, Department) = (salary, department);
-
-        public void SetDepartment(Department dept) => Department = dept;
-
-        public override String ToString() => base.ToString() + $" and makes {Salary:C} a year.";
+            : base(firstName, lastName, age)
+        {
+            Salary = salary;
+            Department = department;
+        }
     }
 }
