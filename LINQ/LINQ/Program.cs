@@ -81,10 +81,7 @@ namespace LINQ
 
         private static List<Student> GetStudentsTakingClassInDept(Department dept)
         {
-            List<Student> results = new List<Student>();
-            classes.Where(x => x.Department == dept).GroupBy(x => x.Students).Select(x => x.Key).ToList().ForEach(x => results.AddRange(x));
-            results = results.Distinct().ToList();
-            return results;
+            return classes.Where(x => x.Department == dept).SelectMany(x => x.Students).Distinct().ToList(); ;
         }
     }
 }
