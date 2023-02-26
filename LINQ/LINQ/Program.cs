@@ -81,8 +81,12 @@ namespace LINQ
 
         private static List<Student> GetStudentsTakingClassInDept(Department dept)
         {
+            int classesInDeptCount = classes.Where(x => x.Department == dept).Count();
+            var test = classes.Where(x => x.Department == dept).Select(x => x.Students).Distinct().ToList();
+            var result = classes.Where(x => x.Department == dept).SelectMany(x => x.Students).Distinct().ToList();
+
             //https://stackoverflow.com/questions/958949/difference-between-select-and-selectmany
-            return classes.Where(x => x.Department == dept).SelectMany(x => x.Students).Distinct().ToList(); ;
+            return classes.Where(x => x.Department == dept).SelectMany(x => x.Students).Distinct().ToList();
         }
     }
 }
