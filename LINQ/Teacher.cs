@@ -8,7 +8,7 @@ namespace LINQ
 {
     public class Teacher : Person, IDepartment
     {
-        public List<Class> Classes { get; } = new List<Class>();
+        public List<Class> Classes { get; } = [];
         public float Salary { get; set; }
         public Department Department { get; set; }
 

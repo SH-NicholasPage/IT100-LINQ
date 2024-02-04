@@ -45,36 +45,42 @@ namespace LINQ
         //Return the teacher that is being paid the most
         private static Teacher GetTeacherPaidTheMost()
         {
+            //TODO
             return null;
         }
 
         //Return the oldest student
         private static Student GetOldestStudent()
         {
+            //TODO
             return null;
         }
 
         //Return a list of students with a GPA over the target
         private static List<Student> GetStudentsWithGPAOver(float gpa)
         {
+            //TODO
             return null;
         }
 
         //Return the student with the highest GPA in the target class
         private static Student GetHighestGPAStudentInClass(Class targetClass)
         {
+            //TODO
             return null;
         }
 
         //Return a list of classes in the target department with at least (>=) the target number of students
         private static List<Class> GetClassesInDepartmentWithOverXStudents(Department dept, int minNumOfStudents)
         {
+            //TODO
             return null;
         }
 
         //Returns the student with the highest GPA considering all classes in a department
         private static Student GetHighestGPAStudentInDepartment(Department targetDept)
         {
+            //TODO
             return null;
         }
     }

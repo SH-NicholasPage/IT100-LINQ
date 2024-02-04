@@ -262,7 +262,7 @@ namespace LINQ
         
         private static List<T> GetRandomDistinct<T>(List<T> list, short count = 1)
         {
-            List<T> result = new List<T>();
+            List<T> result = [];
 
             while(count-- > 0)
             {

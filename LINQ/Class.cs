@@ -11,7 +11,7 @@ namespace LINQ
         public String ClassName { get; init; }
         public Department Department { get; set; }
         private String CourseCode { get; init; }
-        public List<Student> Students { get; init; } = new List<Student>();
+        public List<Student> Students { get; init; } = [];
         public Teacher? Teacher { get; set; }
 
         public Class(String className, Department department, String courseCode)
