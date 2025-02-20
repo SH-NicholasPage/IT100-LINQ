@@ -33,7 +33,7 @@ namespace LINQ
 
             //(3 pts)
             const Department deptTarget = Department.ComputerScience;
-            const int numOfStudentsTarget = 11;
+            const int numOfStudentsTarget = 6;
             Console.WriteLine($"Classes with over {numOfStudentsTarget} students in {deptTarget}: " +
                 $"{Program.StringifyList(GetClassesInDepartmentWithOverXStudents(deptTarget, numOfStudentsTarget))}");
 
